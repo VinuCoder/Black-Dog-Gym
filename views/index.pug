@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <!-- If we wnat to link some css file which is in static folder than we use  -->
+    style
+        include ../static/style.css  
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">About_Us</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="heading">
+            <h1>Black Dog Gym</h1>
+            <p>
+                | Fill the below form to give your life and body a good shape...
+                <!-- | #{content}    To get object from another file to this file we need to write it as (#{var_name}).
+                    We use this bar because when we pass value inside any h or p than we have to put this bar but when we write direct code after title or body than we dont need it as we see in title.   --> 
+            </p>
+        </div>
+        <form action="/" method="post" class="form">   <!--We write post here because by apply GET it shows data in url bar -->
+            <input type="text" name="Name" id="name" placeholder="Enter your name">;
+            <input type="number" name="mobile_no" id="mobile_no" placeholder="Enter your mobile_no.">;
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="Enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

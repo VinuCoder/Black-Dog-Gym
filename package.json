@@ -1,0 +1,17 @@
+{
+  "name": "cwv",
+  "version": "1.0.0",
+  "description": "This is the package which we download when exploring nodes and express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vinu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
