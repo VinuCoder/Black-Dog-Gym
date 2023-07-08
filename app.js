@@ -50,8 +50,8 @@ app.post("/",(req,res)=>{
     let outputToWrite=`The name of the client is ${Name} , and the mobil_no is ${mobile_no} ,The address of the client is ${address} ,more about our client:${more}`
     fs.writeFileSync('output.txt',outputToWrite);
 
-    const data={'message':"Your form has been submitted successfully"}
-    res.status(200).render('index.pug',data);
+    const data2={'message':"Your form has been submitted successfully"}
+    res.status(200).render('index.pug',data2);
 }); 
 
 app.listen(port,()=>{
