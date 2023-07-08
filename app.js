@@ -38,7 +38,7 @@ app.set('views', path.join(__dirname,'views'));
 
 // Writing Raw html in index.pug
 app.get("/",(req,res)=>{
-    const data={'title':"Adding raw html to pug",'content':"This is the best way to add the raw html file in pug"};
+    const data={'title':"Black-Dog-GYM",'content':"This is the best way to add the raw html file in pug"};
     res.status(200).render('index.pug',data);
 });
 
